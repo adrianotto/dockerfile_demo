@@ -4,7 +4,7 @@ IMAGE_NAME=httpd
 IMAGE_TAG=$(date +%Y-%m-%d_%s)
 
 docker build -t ${IMAGE_NAME}:${IMAGE_TAG} .
-docker tag ${IMAGE_NAME}:${IMAGE_TAG} ${IMAGE_NAME}:latest
+docker tag -f ${IMAGE_NAME}:${IMAGE_TAG} ${IMAGE_NAME}:latest
 
 if [ $? -eq 0 ] ; then
         docker kill ${IMAGE_NAME}
