@@ -1,7 +1,7 @@
 #!/bin/sh
 
 IMAGE_NAME=httpd
-IMAGE_TAG=$(date +%Y-%m-%d)
+IMAGE_TAG=$(date +%Y-%m-%d_%s)
 
 docker build -t ${IMAGE_NAME}:${IMAGE_TAG} .
 docker tag ${IMAGE_NAME}:${IMAGE_TAG} ${IMAGE_NAME}:latest
