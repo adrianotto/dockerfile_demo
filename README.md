@@ -12,7 +12,7 @@ export OS_USERNAME=yourCloudUserName
 export OS_API_KEY=e800b4fdc8797498f4170878f35d2e53
 
 docker-machine create -d rackspace my-machine
-eval "$(docker-machine env my-machine)"
+docker-machine ssh my-machine
 ```
 
 Clone the repo:
