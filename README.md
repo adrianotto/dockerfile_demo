@@ -3,7 +3,7 @@ Demonstration of a Dockerfile, and a simple build script and start script to acc
 
 Requires docker installation prior to use. Example:
 
-```curl -L https://github.com/docker/machine/releases/download/v0.7.0/docker-machine-`uname -s`-`uname -m` >/usr/local/bin/docker-machine && \
+```curl -L https://github.com/docker/machine/releases/download/v0.7.0/docker-machine-\`uname -s\`-\`uname -m\` >/usr/local/bin/docker-machine && \
 chmod +x /usr/local/bin/docker-machine
 
 export OS_REGION_NAME=IAD
