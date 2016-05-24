@@ -7,4 +7,4 @@ Clone the repo:
 
 Run the build.sh script:
 
-```$ sh –x build.sh```
+```sh -x build.sh```
