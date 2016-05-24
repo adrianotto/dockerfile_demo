@@ -8,7 +8,7 @@ docker tag -f ${IMAGE_NAME}:${IMAGE_TAG} ${IMAGE_NAME}:latest
 
 if [ $? -eq 0 ] ; then
         docker kill ${IMAGE_NAME}
-        docker attach ${IMAGE_NAME} >> /dev/null 2>&1
+        docker attach ${IMAGE_NAME} >> /dev/null 2>&1 # Await termination
         docker rm ${IMAGE_NAME}
         docker run --name ${IMAGE_NAME} -p 80:80 -d ${IMAGE_NAME}:${IMAGE_TAG}
 else

@@ -1,4 +1,4 @@
-FROM centos:centos6
+FROM centos:centos6.7
 MAINTAINER Adrian Otto
 RUN yum -y install httpd
 ADD start.sh /start.sh
