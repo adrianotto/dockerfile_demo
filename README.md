@@ -17,7 +17,8 @@ eval "$(docker-machine env my-machine)"
 
 Clone the repo:
 
-```git clone https://github.com/adrianotto/dockerfile_demo.git```
+```git clone https://github.com/adrianotto/dockerfile_demo.git
+cd dockerfile_demo```
 
 Run the build.sh script:
 
